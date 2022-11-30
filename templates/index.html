@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="logo_settings">
+        <img class="logo_image" src="https://o.remove.bg/downloads/13561129-4b83-4020-b371-50aed70899fd/PC-removebg-preview.png" alt="" width="200" height="200">
+        <h1 class="logo">Comp.kg</h1>
+    </div>
+    <p class="header_description">The best computer devices for low prices in Bishkek</p>
+</div>
+
+<div class="container" id="cont">
+    {% for i in post %}
+    <div class="models">
+    <ul>
+<!--        {% for i in post %}-->
+            <li>
+                <h2 class="title">{{ i.title }}</h2>
+                <img class="image" src="{{ i.image.url }}" alt="" width="350" height="200">
+                <p class="description"><a class="text">Description:</a> {{ i.description }}</p>
+                <p class="price"><a class="text">Price:</a> {{ i.price}}</p>
+                <p class="category"><a class="text">Category:</a> {{ i.category}}</p>
+                <a class="more_button" href="{{i.id}}">more</a>
+            </li>
+<!--        {% endfor %}-->
+    </ul>
+</div>
+    {% endfor %}
+</div>
+</body>
+</html>
