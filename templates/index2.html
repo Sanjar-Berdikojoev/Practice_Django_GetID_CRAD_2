@@ -1,10 +1,39 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    {{description_1}}
+<div class="header">
+    <div class="logo_settings">
+        <img class="logo_image" src="../static/images/PC-removebg-preview.png" alt="" width="200" height="200">
+        <h1 class="logo">Comp.kg</h1>
+    </div>
+
+    <p class="header_description">The best computer devices for low prices in Bishkek</p>
+</div>
+<div class="container">
+<div class="models">
+<ul>
+    <li>
+        <h2 class="title">{{ post.title }}</h2>
+                <img class="image" src="{{ post.image.url }}" alt="" width="500" height="300">
+                <p class="price"><a class="text">Price:</a> {{ post.price}}</p>
+                <p class="category"><a class="text">Category:</a> {{ post.category}}</p>
+                <a class="return_button" href="http://127.0.0.1:8000/post">return</a>
+    </li>
+</ul>
+</div>
+<div class="models2">
+    <a class="text_1">Description:</a>
+    <p class="description_1"> {{ post.description_1 }} </p>
+</div>
+</div>
 </body>
 </html>

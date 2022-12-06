@@ -79,11 +79,70 @@ font-size: 30px;
 .logo_settings{
 display:flex;
 }
-#cont {
+.add-model_button{
+padding: 10px 20px;
+margin-left: 130px;
+border-radius: 10px;
+border:rgb(220, 220, 220) 4px solid;
+text-decoration: none;
+color: rgb(220, 220, 220);
+font-family: Roboto;
+font-weight: bold;
+font-size: 22px;
+box-shadow: 0px 0px 80px 8px   rgb(100, 12, 141);
+}
+.add-model_button:hover{
+background: rgb(220, 220, 220);
+color: rgba(100, 12, 141, 0.61);
+border-radius: 10px;
+border: rgba(100, 12, 141, 0.61) 4px solid;
+}
+.special_buttons{
 display:flex;
-    flex-wrap:wrap;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding:100px 0;
-    justify-content:center;
+}
+.delete_button {
+padding: 10px 20px;
+margin-left: 250px;
+margin-bottom: 50px;
+border-radius: 10px;
+border:rgb(220, 220, 220) 4px solid;
+text-decoration: none;
+color: rgb(220, 220, 220);
+font-family: Roboto;
+font-weight: bold;
+font-size: 22px;
+box-shadow: 0px 0px 80px 8px   rgb(100, 12, 141);
+}
+.delete_button:hover{
+background: rgb(220, 220, 220);
+color: rgba(100, 12, 141, 0.61);
+border-radius: 10px;
+border: rgba(100, 12, 141, 0.61) 4px solid;
+}
+/*#cont {
+display:flex;
+flex-wrap:wrap;
+max-width: 1800px;
+margin: 100px;
+padding: 100px 0;
+justify-content:center;
+}*/
+.update_button {
+padding: 10px 20px;
+margin-left: 20px;
+margin-bottom: 50px;
+border-radius: 10px;
+border:rgb(220, 220, 220) 4px solid;
+text-decoration: none;
+color: rgb(220, 220, 220);
+font-family: Roboto;
+font-weight: bold;
+font-size: 22px;
+box-shadow: 0px 0px 80px 8px   rgb(100, 12, 141);
+}
+.update_button:hover{
+background: rgb(220, 220, 220);
+color: rgba(100, 12, 141, 0.61);
+border-radius: 10px;
+border: rgba(100, 12, 141, 0.61) 4px solid;
 }
